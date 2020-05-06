@@ -1,0 +1,22 @@
+<p>list-todos works!</p>
+<table border="1">
+  <caption>
+    My Todo's
+  </caption>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Description</th>
+      <th>Target Date</th>
+    </tr>
+  </thead>
+  <tbody>
+  <!--for(Todo todo: todos){-->
+  <tr *ngFor="let todo of todos">
+    <td>{{todo.id}}</td>
+    <td>{{todo.description}}</td>
+    <td>{{todo.targetDate | date | uppercase}}</td>
+  </tr>
+  </tbody>
+</table>
+
