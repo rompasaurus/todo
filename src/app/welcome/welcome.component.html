@@ -1,2 +1,16 @@
 <p>Wadddddup MuhFucker your name is: {{Name}}</p>
 <p>You can manage your todo's  <a routerLink="/todos"> Here</a></p>
+<div class="container">
+  Click here for customized welcome message
+  <button (click)="getWelcomeMessage()" class="btn btn-success">Get Message</button>
+</div>
+<div>
+  Message : {{Message}}
+</div>
+<div class="container">
+  Message with a parameter
+  <button (click)="getWelcomeMessageWithParameter()" class="btn btn-success">Get Message</button>
+</div>
+<div>
+  Message : {{MessageWParams}}
+</div>
